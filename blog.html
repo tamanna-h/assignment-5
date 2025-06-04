@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dev Blogs</title>
+</head>
+<body class="bg-slate-100">
+   <!-- HEADER SECTION-->
+   <header>
+      <nav class="py-3">
+         <div class="navbar bg-white py-6 rounded-xl w-11/12 mx-auto shadow-sm">
+            <div class="flex-1 flex">
+                  <a class="btn btn-ghost text-xl">
+                     <img src="assets/logo.png" alt="">
+                  </a>
+                  <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex-none">
+                <a href="./index.html"><button class="btn btn-primary mx-3 rounded-xl">Back to desk</button></a>  
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+   <!-- QUESTIONS & ANSWERS -->
+    <section class="py-5">
+        <h1 class="text-center font-bold text-4xl pb-5">Blogs</h1>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-11/12 mx-auto">
+            <div class="collapse-title font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-lg">
+                <h3>There are 5 ways in which can select elements in a DOM using selectors.</h3>
+                
+                <ul class="menu bg-base-100 rounded-box w-56  text-lg">
+                    <li><a>getElementsByTagName()</a></li>
+                    <li><a>getElementsByClassName()</a></li>
+                    <li><a>getElementById()</a></li>
+                    <li><a>querySelector()</a></li>
+                    <li><a>querySelectorAll()</a></li>
+                </ul>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-11/12 mx-auto">
+            <div class="collapse-title font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-lg">
+                InnerHTML returns text of an element with spacing and tags, innerText returns element text without spacing and tags and textContent returns element text with spacing but no tags
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-11/12 mx-auto">
+            <div class="collapse-title font-bold text-xl">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-lg">
+                Event delegation is a technique in JavaScript where you attach a single event listener to a parent element, rather than multiple listeners to each child. The parent listens for events that bubble up from its children.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-11/12 mx-auto">
+            <div class="collapse-title font-bold text-xl">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-lg">
+                Event bubbling is a DOM behavior where an event starts at the most specific element (the target) and then "bubbles up" through its ancestors (like its parent, grandparent, etc.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-11/12 mx-auto">
+            <div class="collapse-title font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-lg">
+                <ul class="menu bg-base-100 rounded-box text-lg">
+                    <li><a>Creating an element: const element = document.createElement("tagName"),</a></li>
+                    <li><a>Appending an element: parentElement.appendChild(element),</a></li>
+                    <li><a>Removing an element: parentElement.removeChild(element)</a></li>
+                </ul>
+                  
+            </div>
+        </div>
+    </section>
+
+
+   <script src="script/script.js"></script>
+</body>
+</html>
